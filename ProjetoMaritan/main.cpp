@@ -1,7 +1,7 @@
 #include "mainwindow.h"
-#include "listasequencial.h"
 #include <QApplication>
 #include <iostream>
+
 
 
 int main(int argc, char *argv[])
@@ -10,16 +10,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
     return a.exec();
-    ListaSequencial lista;
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -11,19 +11,29 @@ CONFIG += c++17
 SOURCES += \
     arvore.cpp \
     fila.cpp \
+    filaseq.cpp \
     listaencadeada.cpp \
+    listaseq.cpp \
     listasequencial.cpp \
+    lse.cpp \
     main.cpp \
     mainwindow.cpp \
-    pilha.cpp
+    no.cpp \
+    pilha.cpp \
+    pilhaseq.cpp
 
 HEADERS += \
     arvore.h \
     fila.h \
+    filaseq.h \
     listaencadeada.h \
+    listaseq.h \
     listasequencial.h \
+    lse.h \
     mainwindow.h \
-    pilha.h
+    no.h \
+    pilha.h \
+    pilhaseq.h
 
 FORMS += \
     arvore.ui \

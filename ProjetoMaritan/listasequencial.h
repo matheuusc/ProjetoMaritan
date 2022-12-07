@@ -2,6 +2,7 @@
 #define LISTASEQUENCIAL_H
 
 #include <QDialog>
+#include "listaseq.h"
 
 namespace Ui {
 class ListaSequencial;
@@ -17,13 +18,14 @@ public:
     int add;
     int rem;
 
-    int getAdd();
-    int getRem();
+    ListaSeq lista;
 
 private slots:
     void on_btn_adicionar_clicked();
 
     void on_btn_remove_clicked();
+
+    void on_btn_consult_clicked();
 
 private:
     Ui::ListaSequencial *ui;

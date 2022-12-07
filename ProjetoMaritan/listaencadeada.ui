@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>739</width>
-    <height>475</height>
+    <width>1072</width>
+    <height>653</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,43 +26,1224 @@
     <string/>
    </property>
   </widget>
-  <widget class="QWidget" name="gridLayoutWidget">
+  <widget class="QLineEdit" name="txt_remove">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>174</y>
+     <width>125</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_remove">
+   <property name="geometry">
+    <rect>
+     <x>303</x>
+     <y>174</y>
+     <width>80</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remover</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>71</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Posição</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>71</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Valor</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>94</y>
+     <width>376</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="txt_add"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>E</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txt_p_add"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_adicionar">
+        <property name="text">
+         <string>Adicionar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="txt_consult_v"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>OU</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txt_consult_p"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_consult">
+        <property name="text">
+         <string>Consultar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>261</x>
+     <y>21</y>
+     <width>210</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lista Encadeada</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_7">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_8">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_9">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_10">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_11">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_12">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_13">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_14">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_15">
+   <property name="geometry">
+    <rect>
+     <x>211</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_16">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>20</y>
-     <width>212</width>
-     <height>114</height>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="0">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>Adicionar</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="text">
-       <string>Remover</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <pointsize>18</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Lista Encadeada</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_17">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_18">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_19">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_20">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_21">
+   <property name="geometry">
+    <rect>
+     <x>311</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_22">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_23">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_24">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos5">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_25">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_26">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_27">
+   <property name="geometry">
+    <rect>
+     <x>411</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_28">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_29">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_30">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos6">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_31">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_32">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_33">
+   <property name="geometry">
+    <rect>
+     <x>511</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_34">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_35">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_36">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos7">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_37">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_38">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_39">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_40">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_41">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_42">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos8">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_43">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_44">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_45">
+   <property name="geometry">
+    <rect>
+     <x>711</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_46">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_47">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_48">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos9">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_49">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>370</y>
+     <width>40</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_50">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_51">
+   <property name="geometry">
+    <rect>
+     <x>811</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_52">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_53">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_54">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_pos10">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>360</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="Line" name="line_56">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>340</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_57">
+   <property name="geometry">
+    <rect>
+     <x>911</x>
+     <y>400</y>
+     <width>70</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_58">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_59">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_60">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>340</y>
+     <width>3</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>90</y>
+     <width>450</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <resources/>
