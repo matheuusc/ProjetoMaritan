@@ -35,6 +35,17 @@ void ListaSequencial::on_btn_adicionar_clicked()
 
     lista.insere(pos, add);
 
+    if(lista.tamanho() == 10){
+        ui->label_7->setText("Não é possível adicionar mais elementos, lista cheia!");
+        delay();
+        ui->label_7->clear();
+    }
+    if(pos > lista.tamanho()+1){
+        ui->label_7->setText("Posição inválida!");
+        delay();
+        ui->label_7->clear();
+    }
+
     if(lista.elemento(1)!= -1){
         ui->lbl_pos1->setText(QString::number(lista.elemento(1)));
     }if(lista.elemento(2)!= -1){
@@ -65,7 +76,13 @@ void ListaSequencial::on_btn_remove_clicked()
     ui->txt_remove->clear();
     ui->txt_remove->setFocus();
 
-    if(!lista.vazia()){
+    if(lista.tamanho() < rem && lista.tamanho() != 0){
+        ui->label_7->setText("Não é possível remover de uma posição vazia!");
+        delay();
+        ui->label_7->clear();
+    }
+
+    if(!lista.vazia() && lista.tamanho() >= rem){
         lista.remove(rem);
         switch(rem){
             case 1:
@@ -400,77 +417,139 @@ void ListaSequencial::on_btn_remove_clicked()
                 break;
         }
 
-    }else{
-
-        ui->label_5->setText("Não é possível remover de uma lista vazia!");
+    }else if(lista.tamanho() == 0){
+        ui->label_7->setText("Não é possível remover de uma lista vazia!");
         delay();
-        ui->label_5->clear();
-
-
+        ui->label_7->clear();
     }
 }
 
 void ListaSequencial::on_btn_consult_clicked()
 {      
     int consult;
-    if(ui->txt_consult_p->text().toInt() != 0){
+    if(ui->txt_consult_p->text().toInt() != 0 && ui->txt_consult_v->text().toInt() == 0){
         consult = ui->txt_consult_p->text().toInt();
-        lista.elemento(consult);
+        ui->txt_consult_p->clear();
+        ui->txt_consult_v->clear();
+        ui->txt_consult_v->setFocus();
         switch(consult){
             case 1:
-                ui->lbl_pos1->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos1->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 1){
+                    ui->lbl_pos1->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos1->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 2:
-                ui->lbl_pos2->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos2->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 2){
+                    ui->lbl_pos2->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos2->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 3:
-                ui->lbl_pos3->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos3->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 3){
+                    ui->lbl_pos3->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos3->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 4:
-                ui->lbl_pos4->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos4->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 4){
+                    ui->lbl_pos4->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos4->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 5:
-                ui->lbl_pos5->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos5->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 5){
+                    ui->lbl_pos5->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos5->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 6:
-                ui->lbl_pos6->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos6->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 6){
+                    ui->lbl_pos6->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos6->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 7:
-                ui->lbl_pos7->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos7->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 7){
+                    ui->lbl_pos7->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos7->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 8:
-                ui->lbl_pos8->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos8->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 8){
+                    ui->lbl_pos8->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos8->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 9:
-                ui->lbl_pos9->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos9->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() >= 9){
+                    ui->lbl_pos9->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos9->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
             case 10:
-                ui->lbl_pos10->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
-                delay();
-                ui->lbl_pos10->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                if(lista.tamanho() == 10){
+                    ui->lbl_pos10->setStyleSheet("QLabel { background-color : green ; color : yellow; }");
+                    delay();
+                    ui->lbl_pos10->setStyleSheet("Qlabel { background-color : ; color : black; }");
+                }else{
+                    ui->label_7->setText("Não é possível consultar esta posição, pois ela está vazia!");
+                    delay();
+                    ui->label_7->clear();
+                }
                 break;
         }
 
-    }else if(ui->txt_consult_v->text().toInt() != 0){
+    }else if(ui->txt_consult_p->text().toInt() == 0){
         consult = ui->txt_consult_v->text().toInt();
+        ui->txt_consult_p->clear();
+        ui->txt_consult_v->clear();
+        ui->txt_consult_v->setFocus();
         int pos = 0;
         int i = 0;
         while(pos != -1){
@@ -536,8 +615,9 @@ void ListaSequencial::on_btn_consult_clicked()
         }
 
     }else if(ui->txt_consult_p->text().toInt() != 0 && ui->txt_consult_v->text().toInt() != 0){
-        consult = ui->txt_consult_v->text().toInt();
-        lista.elemento(consult);
+        ui->label_7->setText("Consulte usando apenas um dos parâmetros!");
+        delay();
+        ui->label_7->clear();
     }
 
     ui->txt_consult_p->clear();

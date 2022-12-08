@@ -235,3 +235,60 @@ void Arvore::on_btn_consult_clicked()
 
 }
 
+
+void Arvore::on_pushButton_clicked()
+{
+    arvore.setTamanho(0);
+    ui->lbl_pos1->clear();
+    ui->lbl_pos2->clear();
+    ui->lbl_pos3->clear();
+    ui->lbl_pos4->clear();
+    ui->lbl_pos5->clear();
+    ui->lbl_pos6->clear();
+    ui->lbl_pos7->clear();
+
+    ui->line->setLineWidth(0);
+    ui->line_2->setLineWidth(0);
+    ui->line_3->setLineWidth(0);
+    ui->line_4->setLineWidth(0);
+    ui->line_5->setLineWidth(0);
+    ui->line_6->setLineWidth(0);
+    ui->line_7->setLineWidth(0);
+    ui->line_8->setLineWidth(0);
+    ui->line_11->setLineWidth(0);
+    ui->line_10->setLineWidth(0);
+    ui->line_12->setLineWidth(0);
+    ui->line_13->setLineWidth(0);
+    ui->line_14->setLineWidth(0);
+    ui->line_15->setLineWidth(0);
+    ui->line_16->setLineWidth(0);
+    ui->line_17->setLineWidth(0);
+    ui->line_18->setLineWidth(0);
+    ui->line_19->setLineWidth(0);
+    ui->line_20->setLineWidth(0);
+    ui->line_21->setLineWidth(0);
+    ui->line_22->setLineWidth(0);
+    ui->line_23->setLineWidth(0);
+    ui->line_24->setLineWidth(0);
+    ui->line_25->setLineWidth(0);
+    ui->line_26->setLineWidth(0);
+    ui->line_27->setLineWidth(0);
+    ui->line_28->setLineWidth(0);
+    ui->line_29->setLineWidth(0);
+    ui->line_30->setLineWidth(0);
+    ui->line_32->setLineWidth(0);
+    ui->line_33->setLineWidth(0);
+    ui->line_34->setLineWidth(0);
+    ui->line_35->setLineWidth(0);
+    ui->line_36->setLineWidth(0);
+    ui->line_37->setLineWidth(0);
+    ui->line_38->setLineWidth(0);
+    ui->line_39->setLineWidth(0);
+    ui->line_40->setLineWidth(0);
+    ui->line_41->setLineWidth(0);
+    ui->line_31->setLineWidth(0);
+
+
+
+}
+

@@ -27,6 +27,7 @@ public:
     int primeiro();
     bool insere(int valor);
     int remove();
+
 };
 
 #endif /* FILASEQ_H_ */

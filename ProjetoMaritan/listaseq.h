@@ -28,6 +28,7 @@ public:
     int posicao (int valor, int desloc);
     bool insere (int pos, int valor);
     int remove(int pos);
+    void setTamanho(int t);
 
 
 };

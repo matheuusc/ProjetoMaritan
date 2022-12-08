@@ -122,3 +122,6 @@ int ListaSeq::remove(int pos){
     return aux;
 }
 
+void ListaSeq::setTamanho(int t){
+    nElementos = t;
+}
